@@ -26,13 +26,9 @@ An interactive Streamlit-based dashboard that analyzes and visualizes customer r
 
 ## 📁 Project Structure
 llm-feedback-dashboard/
-├── app_dashboard.py # Streamlit app (main file)
-├── requirements.txt # Python dependencies
-├── README.md # Project documentation
-├── .gitignore # Ignore unnecessary files
-├── images/ # Dashboard screenshots
-│ ├── dashboard.png
-│ ├── sentiment_chart.png
-│ └── wordcloud.png
+llm-feedback-dashboard/
+├── app_dashboard.py
+├── requirements.txt
+├── README.md
 └── data/
-└── hybrid_sentiment_output.csv # Sample dataset
+    └── hybrid_sentiment_output.csv
