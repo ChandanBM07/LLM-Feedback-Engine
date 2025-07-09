@@ -1,4 +1,4 @@
-# LLM-Feedback-Dashboard
+# LLM-Product-Feedback-Dashboard
 An interactive Streamlit-based dashboard that analyzes and visualizes customer reviews using advanced NLP techniques. Designed to support product managers and analysts in understanding user sentiment, prioritizing features, and identifying improvement opportunities from app reviews.
 
 ## 🚀 Features
