@@ -1,0 +1,76 @@
+🖥 Procedure to Run the Streamlit App
+1️⃣ Install Python (if not already installed)
+Download from: https://www.python.org/downloads/
+
+During installation, check the box: ✅ Add Python to PATH
+
+2️⃣ Install Required Libraries
+Open Terminal / CMD and run:
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Or, if you don’t have a requirements.txt:
+
+bash
+Copy
+Edit
+pip install pandas streamlit matplotlib seaborn wordcloud transformers torch huggingface_hub
+3️⃣ Place Files Correctly
+Your project folder should look like this (don’t change names):
+
+bash
+Copy
+Edit
+LLM-Product-Feedback/
+│
+├── app_dashboard.py               # Main Streamlit app
+├── hybrid_sentiment_output.csv    # Data file
+└── requirements.txt               # Dependencies
+✅ Both app_dashboard.py and hybrid_sentiment_output.csv must be in the same folder.
+
+4️⃣ Run the Streamlit App
+In Terminal / CMD, navigate to the folder:
+
+bash
+Copy
+Edit
+cd path/to/LLM-Product-Feedback
+Then run:
+
+bash
+Copy
+Edit
+streamlit run app_dashboard.py
+5️⃣ Open in Browser
+After running, Streamlit will give you a link like:
+
+nginx
+Copy
+Edit
+Local URL: http://localhost:8501
+Click it (or copy & paste into your browser).
+
+6️⃣ Stop the App
+Press:
+
+objectivec
+Copy
+Edit
+CTRL + C
+in the terminal to stop.
+
+⚡ Tips to Avoid Path Problems
+Always use relative paths in code:
+
+python
+Copy
+Edit
+from pathlib import Path
+data_path = Path(__file__).parent / "hybrid_sentiment_output.csv"
+Never hardcode C:\Users\... or D:\... paths.
+
+If sharing with others (GitHub), just tell them:
+
+“Clone the repo, cd into the folder, run streamlit run app_dashboard.py.”
